@@ -9,6 +9,8 @@ Source0:	http://dl.sourceforge.net/idesk/%{name}-%{version}.tar.gz
 # Source0-md5:	b78fd6a1dba16ae0c29d0c3b7b3c2f1c
 URL:		http://idesk.sourceforge.net/
 BuildRequires:	XFree86-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	imlib2-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
