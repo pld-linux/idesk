@@ -1,7 +1,7 @@
 Summary:	Idesk allows You to create desktop icons
 Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie
 Name:		idesk
-Version:	0.6.1
+Version:	0.7.1
 Release:	1
 License:	BSD
 Group:		X11/Applications
@@ -11,6 +11,7 @@ URL:		http://idesk.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	imlib2-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	startup-notification-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,20 +28,24 @@ oferowana przez wszystkie window managery.
 %setup -q
 
 %build
-%{__make} \
-	cc="%{__cxx}" \
-	cflags="%{rpmcflags} `imlib-config --cflags` `freetype-config --cflags`"
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure
+
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
 
-install idesk $RPM_BUILD_ROOT%{_bindir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING README TODO
+%doc ChangeLog COPYING README TODO
 %attr(755,root,root) %{_bindir}/*
