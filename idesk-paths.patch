@@ -1,0 +1,11 @@
+diff -Nru idesk-0.3.5.orig/Makefile idesk-0.3.5/Makefile
+--- idesk-0.3.5.orig/Makefile	Sat Nov  9 19:06:52 2002
++++ idesk-0.3.5/Makefile	Wed Dec  4 13:03:17 2002
+@@ -1,6 +1,6 @@
+ cc       = g++
+ #cflags   = -g -O2 -W -Wall
+-cflags	 = -g -O2
++cflags	 = -g -O2 `imlib-config --cflags`
+ libs	 = `imlib-config --libs` -lXft
+ bin      = idesk
+ 
