@@ -24,7 +24,7 @@ Idesk umo¿liwia tworzenie ikon na pulpicie - cecha przydatna, ale nie
 oferowana przez wszystkie window managery.
 
 %prep
-%setup -q 
+%setup -q
 %patch0 -p1
 
 %build
@@ -41,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README 
+%doc README
 %attr(755,root,root) %{_bindir}/*
