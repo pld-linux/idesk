@@ -13,7 +13,6 @@ BuildRequires:	Xft-devel
 BuildRequires:	imlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix	/usr/X11R6
 
 %description
 Idesk allows creation of desktop icons. Feature quite nice, and not
