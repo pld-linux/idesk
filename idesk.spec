@@ -6,7 +6,7 @@ Release:	1
 License:	BSD
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/idesk/%{name}-%{version}.tar.gz
-# Source0-md5:	0a417b001406102b5d3368ad84c914ee
+# Source0-md5:	b78fd6a1dba16ae0c29d0c3b7b3c2f1c
 URL:		http://idesk.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	imlib2-devel
