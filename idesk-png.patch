@@ -1,0 +1,14 @@
+--- idesk-0.3.5/Desk.h.orig	2002-11-09 19:06:16.000000000 +0100
++++ idesk-0.3.5/Desk.h	2004-02-19 21:53:15.487418368 +0100
+@@ -5,10 +5,10 @@
+ #include <string>
+ #include <vector>
+ #include <sys/wait.h>
++#include <png.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xft/Xft.h>
+ #include <Imlib.h>
+-#include <png.h>
+ #include <dirent.h>
+ #include "Icon.h"
+ #include "Database.h"
