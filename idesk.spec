@@ -1,4 +1,3 @@
-# TODO: pass optflags
 Summary:	Idesk allows You to create desktop icons
 Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie
 Name:		idesk
@@ -8,12 +7,12 @@ License:	BSD
 Group:		X11/Applications
 Source0:	http://linuxhelp.hn.org/%{name}-%{version}.tar.gz
 # Source0-md5:	4c87edbc3d7db462df576b7e26a04161
-Patch0:		%{name}-paths.patch
+Patch0:		%{name}-png.patch
 URL:		http://linuxhelp.hn.org/idesk.php
-BuildRequires:	Xft-devel
 BuildRequires:	imlib-devel
+BuildRequires:	libstdc++-devel
+BuildRequires:	xft-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Idesk allows creation of desktop icons. Feature quite nice, and not
@@ -28,7 +27,9 @@ oferowana przez wszystkie window managery.
 %patch0 -p1
 
 %build
-%{__make}
+%{__make} \
+	cc="%{__cxx}" \
+	cflags="%{rpmcflags} `imlib-config --cflags` `freetype-config --cflags` -fno-exceptions -fno-rtti"
 
 %install
 rm -rf $RPM_BUILD_ROOT
