@@ -1,5 +1,6 @@
-Summary:	Idesk allows You to create desktop icons.
-Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie.
+# TODO: pass optflags
+Summary:	Idesk allows You to create desktop icons
+Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie
 Name:		idesk
 Version:	0.3.5
 Release:	1
@@ -8,9 +9,10 @@ Group:		X11/Applications
 Source0:	http://linuxhelp.hn.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 URL:		http://linuxhelp.hn.org/idesk.php
-BuildRequires:	imlib-devel
 BuildRequires:	Xft-devel
+BuildRequires:	imlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
 %define		_prefix	/usr/X11R6
 
 %description
@@ -30,7 +32,8 @@ oferowana przez wszystkie window managery.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/X11R6/bin
+install -d $RPM_BUILD_ROOT%{_bindir}
+
 install idesk $RPM_BUILD_ROOT%{_bindir}
 
 %clean
