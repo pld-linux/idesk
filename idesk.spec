@@ -7,6 +7,7 @@ Release:	1
 License:	BSD
 Group:		X11/Applications
 Source0:	http://linuxhelp.hn.org/%{name}-%{version}.tar.gz
+# Source0-md5:	4c87edbc3d7db462df576b7e26a04161
 Patch0:		%{name}-paths.patch
 URL:		http://linuxhelp.hn.org/idesk.php
 BuildRequires:	Xft-devel
