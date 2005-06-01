@@ -1,0 +1,12 @@
+diff -urN idesk-0.7.2/Makefile.am idesk-0.7.2.new/Makefile.am
+--- idesk-0.7.2/Makefile.am	2005-05-03 00:24:23.000000000 +0200
++++ idesk-0.7.2.new/Makefile.am	2005-06-01 11:46:17.000000000 +0200
+@@ -16,7 +16,7 @@
+ install-data-local:
+ 	@$(NORMAL_INSTALL)
+ 	if test -d $(srcdir)/examples; then \
+-	 $(mkinstalldirs) $(pkgdatadir); \
++	 $(mkinstalldirs) $(DESTDIR)$(pkgdatadir); \
+ 	 $(INSTALL_DATA) $(srcdir)/README $(DESTDIR)$(pkgdatadir); \
+ 	   for example in $(srcdir)/examples/*; do \
+ 	     	if test -f $$example; then \
