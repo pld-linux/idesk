@@ -1,12 +1,12 @@
 Summary:	Idesk allows You to create desktop icons
 Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie
 Name:		idesk
-Version:	0.7.3
+Version:	0.7.4
 Release:	1
 License:	BSD
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/idesk/%{name}-%{version}.tar.gz
-# Source0-md5:	c4afb05492f1ec87b0d2be210e228681
+Source0:	http://dl.sourceforge.net/idesk/%{name}-%{version}.tar.bz2
+# Source0-md5:	7e11b0b5cc181e74616e24600b354698
 URL:		http://idesk.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
