@@ -8,7 +8,6 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/idesk/%{name}-%{version}.tar.bz2
 # Source0-md5:	beb48c97815c7b085e3b3d601297fbb8
 URL:		http://idesk.sourceforge.net/
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	imlib2-devel
@@ -16,6 +15,7 @@ BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	startup-notification-devel
+BuildRequires:	xorg-lib-libXft-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
