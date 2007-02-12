@@ -1,5 +1,5 @@
 Summary:	Idesk allows You to create desktop icons
-Summary(pl):	Idesk umo¿liwia tworzenie ikon na pulpicie
+Summary(pl.UTF-8):   Idesk umoÅ¼liwia tworzenie ikon na pulpicie
 Name:		idesk
 Version:	0.7.5
 Release:	1
@@ -26,13 +26,13 @@ transparency. Each icon can be configured to run one or more shell
 commands and the actions which run those commands are completely
 configurable.
 
-%description -l pl
-Idesk umo¿liwia tworzenie ikon na pulpicie - cecha przydatna, ale nie
-oferowana przez wszystkich zarz±dców okien. Grafiki ikon pochodz± z
-plików PNG lub (wektorowych) SVG i wspieraj± niektóre efekty takie
-jak przezroczysto¶æ. Ka¿da ikona mo¿e byæ skonfigurowana do
-uruchamiania jednego lub wiêkszej liczby poleceñ pow³oki, a akcje
-uruchamiaj±ce te polecenia s± w pe³ni konfigurowalne.
+%description -l pl.UTF-8
+Idesk umoÅ¼liwia tworzenie ikon na pulpicie - cecha przydatna, ale nie
+oferowana przez wszystkich zarzÄ…dcÃ³w okien. Grafiki ikon pochodzÄ… z
+plikÃ³w PNG lub (wektorowych) SVG i wspierajÄ… niektÃ³re efekty takie
+jak przezroczystoÅ›Ä‡. KaÅ¼da ikona moÅ¼e byÄ‡ skonfigurowana do
+uruchamiania jednego lub wiÄ™kszej liczby poleceÅ„ powÅ‚oki, a akcje
+uruchamiajÄ…ce te polecenia sÄ… w peÅ‚ni konfigurowalne.
 
 %prep
 %setup -q
