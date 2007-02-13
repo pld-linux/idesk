@@ -1,5 +1,5 @@
 Summary:	Idesk allows You to create desktop icons
-Summary(pl.UTF-8):   Idesk umożliwia tworzenie ikon na pulpicie
+Summary(pl.UTF-8):	Idesk umożliwia tworzenie ikon na pulpicie
 Name:		idesk
 Version:	0.7.5
 Release:	1
